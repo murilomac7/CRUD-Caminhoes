@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUD_Caminhoes", "CRUD_Caminhoes\CRUD_Caminhoes.csproj", "{EFF777AF-DA5D-4F6F-AD8B-1799A1E79878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EFF777AF-DA5D-4F6F-AD8B-1799A1E79878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF777AF-DA5D-4F6F-AD8B-1799A1E79878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF777AF-DA5D-4F6F-AD8B-1799A1E79878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF777AF-DA5D-4F6F-AD8B-1799A1E79878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F7463ECF-15D7-4037-905F-8C5DB14A2960}
+	EndGlobalSection
+EndGlobal

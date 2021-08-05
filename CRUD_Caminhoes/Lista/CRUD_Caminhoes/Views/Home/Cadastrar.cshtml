@@ -1,0 +1,32 @@
+﻿@model CRUD_Caminhoes.Models.Caminhao;
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<div>
+    <h2>Novo Caminhão</h2>
+
+    <form class="row" asp-controller="Home" asp-action="Cadastrar" method="post">
+        <div class="col-12 col-lg-6 row">
+            <div class="col-md-6">
+                <label class="col-form-label" for="name" asp-for="Nome">Nome</label>
+                <input class="form-control" type="text" id="name" asp-for="Nome" />
+                <span class="text-danger" asp-validation-for="Nome"></span>
+            </div>
+            <div class="col-md-6">
+                <label class="col-form-label" for="date" asp-for="DtCriacao">Data de Criação</label>
+                <input textmode="datetime-local" class="form-control" id="date" asp-for="DtCriacao" />
+                <span class="text-danger" asp-validation-for="DtCriacao"></span>
+            </div>
+            <div class="col-12">
+                <label class="col-form-label" for="desc" asp-for="Descricao">Descrição</label>
+                <textarea class="form-control" id="desc" asp-for="Descricao"></textarea>
+                <span class="text-danger" asp-validation-for="Descricao"></span>
+            </div>
+            <div class="col-12 row justify-content-end px-0">
+                <button type="submit" class="btn btn-primary mt-4">Cadastrar</button>
+            </div>
+        </div>        
+    </form>
+</div>

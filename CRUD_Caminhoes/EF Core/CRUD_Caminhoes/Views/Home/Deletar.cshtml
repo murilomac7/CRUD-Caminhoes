@@ -1,0 +1,14 @@
+﻿@model CRUD_Caminhoes.Models.Caminhao;
+@{
+    ViewData["Title"] = "Deletar";
+}
+
+<div>
+    <h2>Excluir</h2>
+    <h5>Tem certeza que deseja remover o caminhão @Model.Nome?</h5>
+    <hr />
+    <form asp-controller="Home" asp-action="Deletar" method="post">
+        <a class="btn btn-secondary" asp-action="Index">Cancelar</a>
+        <button type="submit" class="btn btn-danger">Excluir</button>
+    </form>
+</div>

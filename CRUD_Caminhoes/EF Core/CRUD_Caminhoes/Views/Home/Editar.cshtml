@@ -1,0 +1,29 @@
+﻿@model CRUD_Caminhoes.Models.Caminhao;
+
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<div>
+    <h2>Novo Caminhão</h2>
+
+    <form class="row" asp-controller="Home" asp-action="Editar" method="post">
+        <div class="col-12 col-lg-6 row">
+            <div class="col-md-6">
+                <label class="col-form-label" for="name">Nome</label>
+                <input class="form-control" type="text" id="name" asp-for="Nome" />
+            </div>
+            <div class="col-md-6">
+                <label class="col-form-label" for="date">Data de Criação</label>
+                <input type="date" class="form-control" id="date" asp-for="DtCriacao" />
+            </div>
+            <div class="col-12">
+                <label class="col-form-label" for="desc">Descrição</label>
+                <textarea class="form-control" id="desc" asp-for="Descricao"></textarea>
+            </div>
+            <div class="col-12 row justify-content-end px-0">
+                <button type="submit" class="btn btn-primary mt-4">Salvar</button>
+            </div>
+        </div>
+    </form>
+</div>

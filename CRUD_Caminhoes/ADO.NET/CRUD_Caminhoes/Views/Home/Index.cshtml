@@ -1,0 +1,62 @@
+﻿@model IEnumerable<CRUD_Caminhoes.Models.Caminhao>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <h2>Lista de Caminhões</h2>
+    <a class="btn btn-success my-3" asp-controller="Home" asp-action="Cadastrar">Novo Caminhão</a>
+
+    <table class="table table-responsive-md">
+        <thead>
+            <tr>
+                <th>
+                    Nome
+                </th>
+                <th>
+                    Descrição
+                </th>
+                <th>
+                    Data de Criação
+                </th>
+                <th>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.Count() != 0)
+            {
+                @foreach (Caminhao item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.Nome
+                        </td>
+                        <td>
+                            @item.Descricao
+                        </td>
+                        <td>
+                            @item.DtCriacao
+                        </td>
+                        <td width="220px">
+                            <a class="btn btn-info btn-sm" asp-action="Detalhes" asp-route-id="@item.Id">Detalhes</a>
+                            <a class="btn btn-warning btn-sm" asp-action="Editar" asp-route-id="@item.Id">Editar</a>
+                            <a class="btn btn-danger btn-sm" asp-action="Deletar" asp-route-id="@item.Id">Excluir</a>
+                        </td>
+                    </tr>
+                }
+            }
+            @if(Model.Count() == 0)
+            {
+                <tr>
+                    <td>
+                        Não há caminhões cadastrados.
+                        <br />
+                        <br />
+                        <a asp-controller="Home" asp-action="Gerar">Clique aqui</a> para gerar alguns caminhões de exemplo.
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

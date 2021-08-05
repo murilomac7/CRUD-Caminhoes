@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\CRUD_Caminhoes",
+    "\\CRUD_Caminhoes\\Controllers",
+    "\\CRUD_Caminhoes\\Repository",
+    "\\CRUD_Caminhoes\\Views",
+    "\\CRUD_Caminhoes\\Views\\Home",
+    "\\Database"
+  ],
+  "SelectedNode": "\\CRUD_Caminhoes\\Controllers\\HomeController.cs",
+  "PreviewInSolutionExplorer": false
+}

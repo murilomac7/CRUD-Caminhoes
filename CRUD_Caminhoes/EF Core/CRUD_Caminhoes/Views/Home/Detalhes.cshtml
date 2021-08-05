@@ -1,0 +1,28 @@
+﻿@model CRUD_Caminhoes.Models.Caminhao;
+@{
+    ViewData["Title"] = "Detalhes";
+}
+
+<div>
+    <h2>Detalhes</h2>
+    <h5>@Model.Nome</h5>
+    <hr />
+    <dl>
+        <dt>Código de identificação</dt>
+        <dd>
+            @Model.Id
+        </dd>
+        <dt>Nome</dt>
+        <dd>
+            @Model.Nome
+        </dd>
+        <dt>Data de Criação</dt>
+        <dd>
+            @Model.DtCriacao
+        </dd>
+        <dt>Descrição</dt>
+        <dd>
+            @Model.Descricao
+        </dd>
+    </dl>
+</div>
